@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/idRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/idStartNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启导航" />
+
+        <Button
+            android:id="@+id/idStopNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束导航" />
+
+        <Button
+            android:id="@+id/idRetrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="retrofit" />
+
+        <Button
+            android:id="@+id/idNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="notification" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,6 @@
+rootProject.name = "BinderCode"
+include ':app'
+include ':amap'
+include ':baidumap'
+include ':CarEngineLib'
+include ':BaseLibrary'

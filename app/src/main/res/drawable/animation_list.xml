@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test1"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test2"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test3"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test5"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test6"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test7"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test8"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test9"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test10"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test11"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test12"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test13"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test14"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test15"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test16"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test17"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test18"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test19"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test20"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test21"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test22"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test23"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test24"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test25"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test26"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test27"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test28"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test29"
+        android:duration="60" />
+
+    <item
+        android:drawable="@drawable/test30"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test31"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test32"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test33"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test34"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/test35"
+        android:duration="60" />
+
+</animation-list>
