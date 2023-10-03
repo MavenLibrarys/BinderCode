@@ -2,12 +2,18 @@ package com.yxf.bindercode;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.yxf.baselibrary.LogUtil;
+import com.yxf.baselibrary.view.SpinnerView;
+import com.yxf.baselibrary.view.flow.FlowAdapter;
+import com.yxf.baselibrary.view.flow.FlowView;
 import com.yxf.bindercode.activity.NotificationActivity;
 import com.yxf.bindercode.databinding.ActivityMainBinding;
 import com.yxf.bindercode.hicar.ThirdAppConnectorMgr;
@@ -18,6 +24,8 @@ import com.yxf.bindercode.hicar.api.UrlConstants;
 import com.yxf.bindercode.hicar.api.retrofit.EnjoyRetrofit;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -33,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int NAV_START = 1;
     public static final int NAV_STOP = 0;
     ActivityMainBinding binding;
+    private List<String> flowList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +69,23 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, NotificationActivity.class);
             startActivity(intent);
         });
+
+        initFlowData();
+        SpinnerView spinnerView = findViewById(R.id.idSpinner);
+        spinnerView.setList(flowList);
+    }
+
+    private void initFlowData() {
+        flowList.clear();
+        for (int i = 0; i < 3; i++) {
+            flowList.add("红心火龙果");
+            flowList.add("猕猴桃");
+            flowList.add("橙子");
+            flowList.add("西红柿");
+            flowList.add("红心火龙果");
+            flowList.add("香蕉");
+            flowList.add("香甜哈密瓜");
+        }
     }
 
     private void enjoyRetrofit() {
