@@ -1,0 +1,27 @@
+package com.yxf.baselibrary.utils;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+
+import androidx.core.graphics.drawable.DrawableCompat;
+
+public class DrawableUtil {
+    //drawable重新着色
+    public static Drawable tint(Drawable drawable, int color) {
+        Drawable wrap = DrawableCompat.wrap(drawable);
+        wrap.mutate();
+        DrawableCompat.setTint(wrap, color);
+        return wrap;
+    }
+
+    public static Bitmap drawableToBitmap(Drawable drawable) {
+        int width = drawable.getIntrinsicWidth();
+        int height = drawable.getIntrinsicHeight();
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, width, height);
+        drawable.draw(canvas);
+        return bitmap;
+    }
+}
