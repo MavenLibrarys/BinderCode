@@ -2,20 +2,17 @@ package com.yxf.bindercode;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.yxf.baselibrary.LogUtil;
-import com.yxf.baselibrary.view.SpinnerView;
-import com.yxf.baselibrary.view.flow.FlowAdapter;
-import com.yxf.baselibrary.view.flow.FlowView;
 import com.yxf.bindercode.activity.NotificationActivity;
 import com.yxf.bindercode.databinding.ActivityMainBinding;
+import com.yxf.bindercode.db.DbCentre;
+import com.yxf.bindercode.db.dao.GoodsDao;
+import com.yxf.bindercode.db.entry.Goods;
 import com.yxf.bindercode.hicar.ThirdAppConnectorMgr;
 import com.yxf.bindercode.hicar.api.LoginBean;
 import com.yxf.bindercode.hicar.api.LoginService;
@@ -70,9 +67,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        initFlowData();
-        SpinnerView spinnerView = findViewById(R.id.idSpinner);
-        spinnerView.setList(flowList);
+        binding.idDb.setOnClickListener(v -> {
+            DbCentre dbCentre = DbCentre.getInstance();
+            GoodsDao goodsDao = dbCentre.getGoodsDao();
+            Goods goods = new Goods("goods1111");
+            goods.setGoodsPrice("56");
+            goodsDao.insertGoods(goods);
+            List<Goods> all = goodsDao.getAll();
+            for (int i = 0; i < all.size(); i++) {
+                LogUtil.i(TAG, "goods:" + all.get(i));
+            }
+        });
+
     }
 
     private void initFlowData() {
