@@ -11,8 +11,8 @@ import com.yxf.baselibrary.LogUtil;
 import com.yxf.bindercode.activity.NotificationActivity;
 import com.yxf.bindercode.databinding.ActivityMainBinding;
 import com.yxf.bindercode.db.DbCentre;
-import com.yxf.bindercode.db.dao.GoodsDao;
-import com.yxf.bindercode.db.entry.Goods;
+import com.yxf.bindercode.db.dao.ProjectDao;
+import com.yxf.bindercode.db.entry.Project;
 import com.yxf.bindercode.hicar.ThirdAppConnectorMgr;
 import com.yxf.bindercode.hicar.api.LoginBean;
 import com.yxf.bindercode.hicar.api.LoginService;
@@ -66,19 +66,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, NotificationActivity.class);
             startActivity(intent);
         });
-
-        binding.idDb.setOnClickListener(v -> {
-            DbCentre dbCentre = DbCentre.getInstance();
-            GoodsDao goodsDao = dbCentre.getGoodsDao();
-            Goods goods = new Goods("goods1111");
-            goods.setGoodsPrice("56");
-            goodsDao.insertGoods(goods);
-            List<Goods> all = goodsDao.getAll();
-            for (int i = 0; i < all.size(); i++) {
-                LogUtil.i(TAG, "goods:" + all.get(i));
-            }
-        });
-
+        dbOperate();
     }
 
     private void initFlowData() {
@@ -92,6 +80,40 @@ public class MainActivity extends AppCompatActivity {
             flowList.add("香蕉");
             flowList.add("香甜哈密瓜");
         }
+    }
+
+    private void dbOperate() {
+        binding.idInsert.setOnClickListener(v -> {
+            DbCentre dbCentre = DbCentre.getInstance();
+            ProjectDao projectDao = dbCentre.getProjectDao();
+            projectDao.insertProject(new Project(123, "p123"));
+        });
+
+        binding.idDelete.setOnClickListener(v -> {
+            DbCentre dbCentre = DbCentre.getInstance();
+            ProjectDao projectDao = dbCentre.getProjectDao();
+            Project project = projectDao.getProjectByUid(15);
+            projectDao.deleteProject(project);
+        });
+
+        binding.idUpdate.setOnClickListener(v -> {
+            DbCentre dbCentre = DbCentre.getInstance();
+            ProjectDao projectDao = dbCentre.getProjectDao();
+            Project project = projectDao.getFirstProject();
+            if (project == null) {
+                return;
+            }
+            project.setProjectName(project.getProjectName() + "----刚更新了project的名称.");
+            int res = projectDao.updateProject(project);
+            LogUtil.i(TAG, "update res:" + res);
+        });
+
+        binding.idQuery.setOnClickListener(v -> {
+            DbCentre dbCentre = DbCentre.getInstance();
+            ProjectDao projectDao = dbCentre.getProjectDao();
+            Project project = projectDao.getFirstProject();
+            LogUtil.i(TAG, "query project:" + project);
+        });
     }
 
     private void enjoyRetrofit() {

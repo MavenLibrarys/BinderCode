@@ -39,9 +39,9 @@ android {
         dataBinding true
     }
 
-    sourceSets{
-        main{
-            java.srcDirs=['src/main/java','src/main/aidl']
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
         }
     }
 }
@@ -57,6 +57,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.github.bumptech.glide:glide:4.15.1'
     implementation project(':BaseLibrary')
-    api "androidx.room:room-runtime:2.4.0"
     annotationProcessor "androidx.room:room-compiler:2.4.0"
 }

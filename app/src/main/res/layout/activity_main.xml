@@ -34,11 +34,36 @@
             android:layout_height="wrap_content"
             android:text="notification" />
 
-        <Button
-            android:id="@+id/idDb"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="db" />
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/idInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="insert" />
+
+            <Button
+                android:id="@+id/idDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete" />
+
+            <Button
+                android:id="@+id/idUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update" />
+
+            <Button
+                android:id="@+id/idQuery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="query" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

@@ -8,7 +8,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.yxf.bindercode.CarApplication;
 import com.yxf.bindercode.db.dao.GoodsDao;
 import com.yxf.bindercode.db.dao.ProjectDao;
-import com.yxf.bindercode.db.dao.UserDao;
 import com.yxf.bindercode.db.database.AppDatabase;
 
 public class DbCentre {
@@ -24,17 +23,13 @@ public class DbCentre {
         appDatabase = Room
                 .databaseBuilder(CarApplication.getInstance().getBaseContext(), AppDatabase.class, DB_NAME)
                 .allowMainThreadQueries()
-                .addMigrations(new Migration(3, 4) {
+                .addMigrations(new Migration(4, 5) {
                     @Override
                     public void migrate(@NonNull SupportSQLiteDatabase database) {
-                        database.execSQL("ALTER TABLE Goods add column goods_price TEXT");
+                        database.execSQL("DROP TABLE User");
                     }
                 })
                 .build();
-    }
-
-    public UserDao getUserDao() {
-        return appDatabase.userDao();
     }
 
     public ProjectDao getProjectDao() {
