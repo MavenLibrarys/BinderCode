@@ -2,6 +2,7 @@ package com.yxf.bindercode;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -19,6 +20,8 @@ import com.yxf.bindercode.hicar.api.LoginService;
 import com.yxf.bindercode.hicar.api.ProjectService;
 import com.yxf.bindercode.hicar.api.UrlConstants;
 import com.yxf.bindercode.hicar.api.retrofit.EnjoyRetrofit;
+import com.yxf.bindercode.reflect.InjectUtil;
+import com.yxf.bindercode.reflect.InjectView;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -40,11 +43,17 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     private List<String> flowList = new ArrayList<>();
 
+    @InjectView(R.id.idReflect)
+    private Button idReflect;
+
+    @InjectView(R.id.idQuery)
+    private Button idQuery;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
+        InjectUtil.injectView(this);
         binding.idStartNav.setOnClickListener(v -> {
             Bundle bundle = new Bundle();
             bundle.putInt("nav_state", NAV_START);
@@ -67,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         dbOperate();
+
+        idReflect.setOnClickListener(v -> {
+            startActivity(new Intent(this, NotificationActivity.class)
+                    .putExtra("id", 123)
+                    .putExtra("notify_name", "mary"));
+        });
     }
 
     private void initFlowData() {
@@ -108,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             LogUtil.i(TAG, "update res:" + res);
         });
 
-        binding.idQuery.setOnClickListener(v -> {
+        idQuery.setOnClickListener(v -> {
             DbCentre dbCentre = DbCentre.getInstance();
             ProjectDao projectDao = dbCentre.getProjectDao();
             Project project = projectDao.getFirstProject();
