@@ -4,6 +4,8 @@ import android.app.PendingIntent;
 import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
 
 import com.yxf.baselibrary.LogUtil;
 import com.yxf.baselibrary.NotifyUtil;
@@ -14,6 +16,9 @@ import com.yxf.bindercode.constants.NotificationConstants;
 import com.yxf.bindercode.databinding.ActivityNotificationLayoutBinding;
 import com.yxf.bindercode.reflect.AutoWired;
 import com.yxf.bindercode.reflect.InjectUtil;
+import com.yxf.bindercode.viewmodel.LiveDataUtil;
+
+import java.lang.reflect.Field;
 
 public class NotificationActivity extends BaseActivity<ActivityNotificationLayoutBinding> {
     public static final String TAG = "NotificationActivity ";
@@ -57,6 +62,26 @@ public class NotificationActivity extends BaseActivity<ActivityNotificationLayou
                     notifyId,
                     action);
         });
+        try {
+            Class<? extends MutableLiveData> cls = LiveDataUtil.getInstance().data.getClass();
+            Field versionField = cls.getSuperclass().getDeclaredField("mVersion");
+            versionField.setAccessible(true);
+            try {
+                Object version = versionField.get(LiveDataUtil.getInstance().data);
+                LogUtil.i(TAG, "mVersion:" + version);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
 
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+
+        LiveDataUtil.getInstance().data.observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                LogUtil.i(TAG, "onChanged s:" + s);
+            }
+        });
     }
 }

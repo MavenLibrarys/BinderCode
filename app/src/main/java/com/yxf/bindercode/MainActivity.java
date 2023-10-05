@@ -22,6 +22,7 @@ import com.yxf.bindercode.hicar.api.UrlConstants;
 import com.yxf.bindercode.hicar.api.retrofit.EnjoyRetrofit;
 import com.yxf.bindercode.reflect.InjectUtil;
 import com.yxf.bindercode.reflect.InjectView;
+import com.yxf.bindercode.viewmodel.LiveDataUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         dbOperate();
 
         idReflect.setOnClickListener(v -> {
+            LiveDataUtil.getInstance().data.postValue("更新数据02！！！");
             startActivity(new Intent(this, NotificationActivity.class)
                     .putExtra("id", 123)
                     .putExtra("notify_name", "mary"));
