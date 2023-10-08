@@ -3,9 +3,11 @@ package com.yxf.bindercode;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.gson.Gson;
 import com.yxf.baselibrary.LogUtil;
@@ -22,7 +24,10 @@ import com.yxf.bindercode.hicar.api.UrlConstants;
 import com.yxf.bindercode.hicar.api.retrofit.EnjoyRetrofit;
 import com.yxf.bindercode.reflect.InjectUtil;
 import com.yxf.bindercode.reflect.InjectView;
+import com.yxf.bindercode.utils.QueryAlgorithm;
+import com.yxf.bindercode.utils.SortAlgorithmUtil;
 import com.yxf.bindercode.viewmodel.LiveDataUtil;
+import com.yxf.bindercode.viewmodel.MainViewModel;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -78,11 +83,29 @@ public class MainActivity extends AppCompatActivity {
         });
         dbOperate();
 
+        MainViewModel mainViewModel = new ViewModelProvider(this).get(MainViewModel.class);
         idReflect.setOnClickListener(v -> {
-            LiveDataUtil.getInstance().data.postValue("更新数据02！！！");
+            /*LiveDataUtil.getInstance().data.postValue("更新数据02！！！");
             startActivity(new Intent(this, NotificationActivity.class)
                     .putExtra("id", 123)
-                    .putExtra("notify_name", "mary"));
+                    .putExtra("notify_name", "mary"));*/
+            idReflect.setText("reflect--after rotate screen.");
+            mainViewModel.count = 20;
+            LogUtil.i(TAG, "count01:" + mainViewModel.count);
+        });
+
+        binding.idSort.setOnClickListener(v -> {
+            int[] arr = new int[100];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = (int) (Math.random() * 100);
+            }
+//            SortAlgorithmUtil.bubbleSort(arr);
+//            SortAlgorithmUtil.selectSort(arr);
+//            SortAlgorithmUtil.insertSort(arr);
+            SortAlgorithmUtil.quickSort(arr);
+            LogUtil.list(TAG, arr);
+            int index = QueryAlgorithm.binaryQuery(arr, 50);
+            LogUtil.i(TAG, "index:" + index);
         });
     }
 
@@ -216,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        LogUtil.i(TAG, "onDestroy===");
         ThirdAppConnectorMgr.getInstance().destroy();
     }
 }
